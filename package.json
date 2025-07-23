@@ -1,0 +1,15 @@
+{
+  "name": "flagster-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "shell:build": "pnpm --filter=shell build",
+    "shell:dev": "pnpm --filter=shell dev",
+    "shell:preview": "pnpm --filter=shell preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1"
+}
