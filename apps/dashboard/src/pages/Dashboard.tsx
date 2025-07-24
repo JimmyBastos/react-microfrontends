@@ -196,18 +196,41 @@ export function Dashboard() {
                 <Input
                   placeholder="Search by key or description..."
                   value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
+                  onChange={(e) => setSearchTerm(e.target.value.trim())}
                   className="pl-10"
+                  maxLength={100}
                 />
               </div>
-              <div className="flex gap-2">
-                <Badge variant="outline" className="cursor-pointer">
+              <div
+                className="flex gap-2"
+                role="tablist"
+                aria-label="Filter feature flags"
+              >
+                <Badge
+                  variant="outline"
+                  className="cursor-pointer"
+                  role="tab"
+                  tabIndex={0}
+                  aria-selected={true}
+                >
                   All ({flags.length})
                 </Badge>
-                <Badge variant="outline" className="cursor-pointer">
+                <Badge
+                  variant="outline"
+                  className="cursor-pointer"
+                  role="tab"
+                  tabIndex={0}
+                  aria-selected={false}
+                >
                   Active ({enabledFlags.length})
                 </Badge>
-                <Badge variant="outline" className="cursor-pointer">
+                <Badge
+                  variant="outline"
+                  className="cursor-pointer"
+                  role="tab"
+                  tabIndex={0}
+                  aria-selected={false}
+                >
                   Inactive ({disabledFlags.length})
                 </Badge>
               </div>

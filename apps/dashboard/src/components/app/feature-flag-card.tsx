@@ -1,4 +1,5 @@
 import { Calendar, Trash2, ExternalLink } from 'lucide-react';
+import { memo } from 'react';
 import { FeatureFlag } from '../../types/feature-flags';
 import {
   Card,
@@ -19,7 +20,7 @@ interface FeatureFlagCardProps {
   onDelete: (id: string) => void;
 }
 
-export function FeatureFlagCard({
+export const FeatureFlagCard = memo(function FeatureFlagCard({
   flag,
   onToggle,
   onDelete,
@@ -101,4 +102,4 @@ export function FeatureFlagCard({
       </CardContent>
     </Card>
   );
-}
+});

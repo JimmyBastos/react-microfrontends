@@ -3,17 +3,8 @@ import { RouteObject } from 'react-router-dom';
 import { LoadingSpinner } from './components/app/loading-spinner';
 import { Container } from '@flagster/ui';
 
-const Dashboard = lazy(
-  () =>
-    // @ts-expect-error: Remote import does not have type declarations
-    import('dashboard/Dashboard'),
-);
-
-const About = lazy(
-  () =>
-    // @ts-expect-error: Remote import does not have type declarations
-    import('about/About'),
-);
+const Dashboard = lazy(() => import('dashboard/Dashboard'));
+const About = lazy(() => import('about/About'));
 
 export const routes: RouteObject[] = [
   {

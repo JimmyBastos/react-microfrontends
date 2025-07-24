@@ -20,30 +20,6 @@ export function Footer() {
               JimmyBastos
             </a>
           </div>
-
-          <div className="flex items-center gap-6 text-sm text-muted-foreground">
-            <a
-              href="#"
-              className="hover:text-foreground transition-colors"
-              onClick={(e) => e.preventDefault()}
-            >
-              Privacy Policy
-            </a>
-            <a
-              href="#"
-              className="hover:text-foreground transition-colors"
-              onClick={(e) => e.preventDefault()}
-            >
-              Terms of Service
-            </a>
-            <a
-              href="#"
-              className="hover:text-foreground transition-colors"
-              onClick={(e) => e.preventDefault()}
-            >
-              Support
-            </a>
-          </div>
         </div>
       </div>
     </footer>

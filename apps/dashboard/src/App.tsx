@@ -8,7 +8,6 @@ function App() {
   const [queryClient, setQueryClient] = useState<QueryClient | null>(null);
 
   useEffect(() => {
-    // @ts-expect-error: Remote import does not have type declarations
     import('shell/QueryClient')
       .then((module) => setQueryClient(module.queryClient || new QueryClient()))
       .catch(() => setQueryClient(new QueryClient()));
