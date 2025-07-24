@@ -1,36 +1,47 @@
-# Rspack project
+# Flagster Dashboard
 
-## Setup
+The dashboard microfrontend for feature flag management. This app provides CRUD operations for feature flags with real-time search, filtering, and optimistic UI updates.
 
-Install the dependencies:
+## Quick Start
 
+Install dependencies:
 ```bash
-npm install
+pnpm install
 ```
 
-## Get started
-
-Start the dev server, and the app will be available at [http://localhost:8080](http://localhost:8080).
-
+Start development server:
 ```bash
-npm run dev
+pnpm dev
 ```
 
-Build the app for production:
+The app will be available at [http://localhost:8282](http://localhost:8282).
 
-```bash
-npm run build
-```
+## Available Scripts
 
-Preview the production build locally:
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm preview` - Preview production build
+- `pnpm lint` - Run ESLint
+- `pnpm lint:fix` - Fix ESLint issues
 
-```bash
-npm run preview
-```
+## Features
 
-## Learn more
+- **Feature Flag Management**: Create, read, update, delete feature flags
+- **Real-time Search**: Instant search and filtering
+- **Optimistic Updates**: Immediate UI feedback
+- **Skeleton Loading**: Smooth loading states
+- **Toast Notifications**: User feedback for actions
+- **Responsive Design**: Works on all screen sizes
 
-To learn more about Rspack, check out the following resources:
+## Architecture
 
-- [Rspack documentation](https://rspack.dev) - explore Rspack features and APIs.
-- [Rspack GitHub repository](https://github.com/web-infra-dev/rspack) - your feedback and contributions are welcome!
+- **Module Federation**: Exposes Dashboard component to Shell
+- **Class-based Services**: API logic separation
+- **TanStack Query**: Data fetching and caching
+- **Component Architecture**: Modular, reusable components
+
+## Dependencies
+
+- React 19
+- TanStack Query
+- @flagster/ui (shared UI components)

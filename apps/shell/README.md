@@ -1,36 +1,39 @@
-# Rspack project
+# Flagster Shell
 
-## Setup
+The main shell application for the Flagster microfrontend architecture. This app serves as the container that orchestrates and loads other microfrontends (Dashboard and About).
 
-Install the dependencies:
+## Quick Start
 
+Install dependencies:
 ```bash
-npm install
+pnpm install
 ```
 
-## Get started
-
-Start the dev server, and the app will be available at [http://localhost:8080](http://localhost:8080).
-
+Start development server:
 ```bash
-npm run dev
+pnpm dev
 ```
 
-Build the app for production:
+The app will be available at [http://localhost:8181](http://localhost:8181).
 
-```bash
-npm run build
-```
+## Available Scripts
 
-Preview the production build locally:
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm preview` - Preview production build
+- `pnpm lint` - Run ESLint
+- `pnpm lint:fix` - Fix ESLint issues
 
-```bash
-npm run preview
-```
+## Architecture
 
-## Learn more
+- **Module Federation**: Exposes QueryClient and imports Dashboard/About apps
+- **React Router**: Handles navigation between microfrontends
+- **Theme Provider**: Manages dark/light theme across the application
+- **Navigation**: Main navigation component with theme toggle
 
-To learn more about Rspack, check out the following resources:
+## Dependencies
 
-- [Rspack documentation](https://rspack.dev) - explore Rspack features and APIs.
-- [Rspack GitHub repository](https://github.com/web-infra-dev/rspack) - your feedback and contributions are welcome!
+- React 19
+- React Router DOM
+- TanStack Query
+- @flagster/ui (shared UI components)

@@ -15,7 +15,13 @@ export default defineConfig({
   },
   resolve: {
     extensions: ['...', '.ts', '.tsx', '.jsx', '.json'],
+    // ts-expect-error non-blocking error
     tsConfig: path.resolve(__dirname, './tsconfig.json'),
+  },
+  devServer: {
+    port: 8383,
+    historyApiFallback: true,
+    watchFiles: [path.resolve(__dirname, 'src')],
   },
   module: {
     rules: [
@@ -56,6 +62,31 @@ export default defineConfig({
   },
   // ts-expect-error Below are non-blocking error and we are working on improving them
   plugins: [
+    new rspack.container.ModuleFederationPlugin({
+      name: 'about',
+      filename: 'remoteEntry.js',
+      exposes: {
+        './About': './src/App',
+      },
+      shared: {
+        react: { singleton: true, eager: true, requiredVersion: '^19.1.0' },
+        'react-dom': {
+          singleton: true,
+          eager: true,
+          requiredVersion: '^19.1.0',
+        },
+        'react-router-dom': {
+          singleton: true,
+          eager: true,
+          requiredVersion: '^7.7.0',
+        },
+        '@tanstack/react-query': {
+          singleton: true,
+          eager: true,
+          requiredVersion: '^5.83.0',
+        },
+      },
+    }),
     new rspack.HtmlRspackPlugin({
       template: './index.html',
     }),

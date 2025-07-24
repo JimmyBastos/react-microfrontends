@@ -7,6 +7,7 @@ import {
   TypographyMuted,
 } from '@flagster/ui';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
+
 import {
   Activity,
   AlertTriangle,
@@ -37,7 +38,7 @@ import {
 } from '../services/feature-flags';
 import { FeatureFlag } from '../types/feature-flags';
 
-function Dashboard() {
+export function Dashboard() {
   const [searchTerm, setSearchTerm] = useState('');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [deleteDialog, setDeleteDialog] = useState<{
@@ -278,5 +279,3 @@ function Dashboard() {
     </Container>
   );
 }
-
-export default Dashboard;

@@ -23,6 +23,7 @@ export function About() {
     'Lucide Icons',
     'Sonner',
     'Rspack',
+    'Zephyr Cloud',
   ];
 
   const features = [
@@ -59,11 +60,13 @@ export function About() {
         <CardContent>
           <TypographyMuted>
             Flagster is a modern feature flag management system built with React
-            19 and TypeScript. It demonstrates advanced patterns including React
-            Query for data fetching, class-based services for API logic,
-            skeleton loading states, and optimistic UI updates. The project
-            showcases best practices in component architecture, state
-            management, and user experience design.
+            19 and TypeScript, powered by Zephyr Cloud for seamless microfrontend
+            deployment and orchestration. It demonstrates advanced patterns
+            including React Query for data fetching, class-based services for
+            API logic, skeleton loading states, and optimistic UI updates. The
+            project showcases best practices in component architecture, state
+            management, and user experience design, with Zephyr Cloud providing
+            the specialized infrastructure needed for microfrontend applications.
           </TypographyMuted>
         </CardContent>
       </Card>
@@ -101,6 +104,42 @@ export function About() {
                 <TypographySmall>{feature}</TypographySmall>
               </div>
             ))}
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <Zap className="w-5 h-5" />
+            Powered by Zephyr Cloud
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <TypographyMuted className="mb-4">
+            This project leverages Zephyr Cloud's specialized microfrontend
+            deployment platform to deliver a production-ready feature flag
+            management system. Zephyr Cloud provides seamless microfrontend
+            orchestration, automated deployments, and enterprise-grade reliability
+            specifically designed for microfrontend architectures.
+          </TypographyMuted>
+          <div className="grid gap-3 md:grid-cols-2">
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+              <TypographySmall>Microfrontend orchestration</TypographySmall>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+              <TypographySmall>Automated microfrontend deployment</TypographySmall>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+              <TypographySmall>Module Federation support</TypographySmall>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+              <TypographySmall>Independent microfrontend scaling</TypographySmall>
+            </div>
           </div>
         </CardContent>
       </Card>

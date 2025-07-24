@@ -1,15 +1,41 @@
 {
   "name": "flagster-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A modern feature flag management system built with React 19 and TypeScript",
+  "private": true,
+  "packageManager": "pnpm@10.13.1",
   "scripts": {
+    "clean": "rm -rf ~./zephyr",
+    "build": "pnpm --recursive build",
+    "dev": "pnpm --recursive --parallel dev",
+    "lint": "pnpm --recursive lint",
+    "lint:fix": "pnpm --recursive lint:fix",
+    "format": "pnpm --recursive format",
     "shell:build": "pnpm --filter=shell build",
     "shell:dev": "pnpm --filter=shell dev",
-    "shell:preview": "pnpm --filter=shell preview"
+    "shell:preview": "pnpm --filter=shell preview",
+    "dashboard:build": "pnpm --filter=dashboard build",
+    "dashboard:dev": "pnpm --filter=dashboard dev",
+    "dashboard:preview": "pnpm --filter=dashboard preview",
+    "about:build": "pnpm --filter=about build",
+    "about:dev": "pnpm --filter=about dev",
+    "about:preview": "pnpm --filter=about preview",
+    "ui:build": "pnpm --filter=@flagster/ui build",
+    "ui:dev": "pnpm --filter=@flagster/ui dev"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.13.1"
+  "keywords": [
+    "react",
+    "typescript",
+    "feature-flags",
+    "micro-frontend",
+    "module-federation",
+    "rspack"
+  ],
+  "author": "Flagster Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "typescript": "^5.8.3"
+  }
 }

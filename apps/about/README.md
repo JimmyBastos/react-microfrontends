@@ -1,36 +1,45 @@
-# Rspack project
+# Flagster About
 
-## Setup
+The about page microfrontend that showcases project information, technology stack, and features. This app demonstrates the project's capabilities and architecture.
 
-Install the dependencies:
+## Quick Start
 
+Install dependencies:
 ```bash
-npm install
+pnpm install
 ```
 
-## Get started
-
-Start the dev server, and the app will be available at [http://localhost:8080](http://localhost:8080).
-
+Start development server:
 ```bash
-npm run dev
+pnpm dev
 ```
 
-Build the app for production:
+The app will be available at [http://localhost:8383](http://localhost:8383).
 
-```bash
-npm run build
-```
+## Available Scripts
 
-Preview the production build locally:
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm preview` - Preview production build
+- `pnpm lint` - Run ESLint
+- `pnpm lint:fix` - Fix ESLint issues
 
-```bash
-npm run preview
-```
+## Features
 
-## Learn more
+- **Project Overview**: Detailed project description and goals
+- **Technology Stack**: Visual display of all technologies used
+- **Key Features**: List of implemented functionality
+- **Statistics**: Component counts and metrics
+- **Zephyr Cloud Integration**: Information about microfrontend deployment
 
-To learn more about Rspack, check out the following resources:
+## Architecture
 
-- [Rspack documentation](https://rspack.dev) - explore Rspack features and APIs.
-- [Rspack GitHub repository](https://github.com/web-infra-dev/rspack) - your feedback and contributions are welcome!
+- **Module Federation**: Exposes About component to Shell
+- **Responsive Design**: Adapts to different screen sizes
+- **Component Showcase**: Demonstrates UI component usage
+- **Information Display**: Clean, organized content presentation
+
+## Dependencies
+
+- React 19
+- @flagster/ui (shared UI components)
