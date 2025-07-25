@@ -47,6 +47,7 @@
   },
   "zephyr:dependencies": {
     "shell": "shell@latest",
-    "dashboard": "dashboard@latest"
+    "dashboard": "dashboard@latest",
+    "ui": "@flagster/ui@latest"
   }
 }

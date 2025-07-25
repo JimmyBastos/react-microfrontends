@@ -50,6 +50,7 @@
   },
   "zephyr:dependencies": {
     "about": "about@latest",
-    "dashboard": "dashboard@latest"
+    "dashboard": "dashboard@latest",
+    "ui": "@flagster/ui@latest"
   }
 }
