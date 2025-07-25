@@ -1,7 +1,7 @@
 import { featureFlagsService } from './feature-flags';
 import { FeatureFlag } from '@/types/feature-flags';
 
-const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export interface DashboardStats {
   totalFlags: number;
@@ -24,20 +24,30 @@ export class DashboardService {
 
     const totalFlags = flags.length;
     const activeFlags = flags.filter((f: FeatureFlag) => f.enabled).length;
-    const activePercentage = totalFlags > 0 ? Math.round((activeFlags / totalFlags) * 100) : 0;
+    const activePercentage =
+      totalFlags > 0 ? Math.round((activeFlags / totalFlags) * 100) : 0;
 
     const sevenDaysAgo = new Date();
     sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
-    const recentFlags = flags.filter((f: FeatureFlag) => f.createdAt >= sevenDaysAgo).length;
+    const recentFlags = flags.filter(
+      (f: FeatureFlag) => f.createdAt >= sevenDaysAgo,
+    ).length;
 
     const thisMonth = new Date();
     thisMonth.setDate(1);
-    const thisMonthFlags = flags.filter((f: FeatureFlag) => f.createdAt >= thisMonth).length;
+    const thisMonthFlags = flags.filter(
+      (f: FeatureFlag) => f.createdAt >= thisMonth,
+    ).length;
 
     const flagsByEnvironment = {
-      development: flags.filter((f: FeatureFlag) => f.environment === 'development').length,
-      staging: flags.filter((f: FeatureFlag) => f.environment === 'staging').length,
-      production: flags.filter((f: FeatureFlag) => f.environment === 'production').length,
+      development: flags.filter(
+        (f: FeatureFlag) => f.environment === 'development',
+      ).length,
+      staging: flags.filter((f: FeatureFlag) => f.environment === 'staging')
+        .length,
+      production: flags.filter(
+        (f: FeatureFlag) => f.environment === 'production',
+      ).length,
     };
 
     return {
