@@ -1,6 +1,6 @@
 # Flagster
 
-A modern feature flag management system built with React 19, TypeScript, and micro-frontend architecture.
+A modern feature flag management demo system built with React 19, TypeScript, and micro-frontend architecture.
 
 [![React](https://img.shields.io/badge/React-19-blue?logo=react)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue?logo=typescript)](https://www.typescriptlang.org/)
