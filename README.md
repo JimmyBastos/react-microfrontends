@@ -19,7 +19,7 @@ A modern feature flag management system built with React 19, TypeScript, and mic
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd flagster-monorepo
+cd react-microfrontends
 
 # Install dependencies
 pnpm install
@@ -41,7 +41,7 @@ Flagster is built using a microfrontend architecture with Module Federation, ena
 ### Project Structure
 
 ```
-flagster-monorepo/
+react-microfrontends/
 ├── apps/
 │   ├── shell/          # Main container application
 │   ├── dashboard/      # Feature flag management
