@@ -1,3 +1,3 @@
-import './styles/styles.css'
+import './styles/styles.css';
 export * from './components';
 export * from './lib';

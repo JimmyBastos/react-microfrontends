@@ -5,16 +5,19 @@ Shared UI component library for the Flagster microfrontend architecture. Built w
 ## Quick Start
 
 Install dependencies:
+
 ```bash
 pnpm install
 ```
 
 Build the library:
+
 ```bash
 pnpm build
 ```
 
 Watch mode for development:
+
 ```bash
 pnpm dev
 ```

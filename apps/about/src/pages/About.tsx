@@ -60,13 +60,14 @@ export function About() {
         <CardContent>
           <TypographyMuted>
             Flagster is a modern feature flag management system built with React
-            19 and TypeScript, powered by Zephyr Cloud for seamless microfrontend
-            deployment and orchestration. It demonstrates advanced patterns
-            including React Query for data fetching, class-based services for
-            API logic, skeleton loading states, and optimistic UI updates. The
-            project showcases best practices in component architecture, state
-            management, and user experience design, with Zephyr Cloud providing
-            the specialized infrastructure needed for microfrontend applications.
+            19 and TypeScript, powered by Zephyr Cloud for seamless
+            microfrontend deployment and orchestration. It demonstrates advanced
+            patterns including React Query for data fetching, class-based
+            services for API logic, skeleton loading states, and optimistic UI
+            updates. The project showcases best practices in component
+            architecture, state management, and user experience design, with
+            Zephyr Cloud providing the specialized infrastructure needed for
+            microfrontend applications.
           </TypographyMuted>
         </CardContent>
       </Card>
@@ -120,8 +121,8 @@ export function About() {
             This project leverages Zephyr Cloud's specialized microfrontend
             deployment platform to deliver a production-ready feature flag
             management system. Zephyr Cloud provides seamless microfrontend
-            orchestration, automated deployments, and enterprise-grade reliability
-            specifically designed for microfrontend architectures.
+            orchestration, automated deployments, and enterprise-grade
+            reliability specifically designed for microfrontend architectures.
           </TypographyMuted>
           <div className="grid gap-3 md:grid-cols-2">
             <div className="flex items-center gap-2">
@@ -130,7 +131,9 @@ export function About() {
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-              <TypographySmall>Automated microfrontend deployment</TypographySmall>
+              <TypographySmall>
+                Automated microfrontend deployment
+              </TypographySmall>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-blue-500"></div>
@@ -138,7 +141,9 @@ export function About() {
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-              <TypographySmall>Independent microfrontend scaling</TypographySmall>
+              <TypographySmall>
+                Independent microfrontend scaling
+              </TypographySmall>
             </div>
           </div>
         </CardContent>

@@ -87,8 +87,8 @@ export default withZephyr()({
         'tanstack/react-query': {
           singleton: true,
           eager: true,
-          requiredVersion: '^5.83.0'
-        }
+          requiredVersion: '^5.83.0',
+        },
       },
     }),
     new rspack.HtmlRspackPlugin({

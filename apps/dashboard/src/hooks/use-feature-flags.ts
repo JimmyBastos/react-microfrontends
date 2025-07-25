@@ -1,7 +1,10 @@
 import { useMemo, useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { toast } from 'sonner';
-import { featureFlagsService, CreateFeatureFlagData } from '../services/feature-flags';
+import {
+  featureFlagsService,
+  CreateFeatureFlagData,
+} from '../services/feature-flags';
 import { FeatureFlag } from '../types/feature-flags';
 
 export function useFeatureFlags() {
@@ -44,7 +47,8 @@ export function useFeatureFlags() {
   );
 
   const createFeatureFlag = useMutation({
-    mutationFn: (data: CreateFeatureFlagData) => featureFlagsService.create(data),
+    mutationFn: (data: CreateFeatureFlagData) =>
+      featureFlagsService.create(data),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['feature-flags'] });
       queryClient.invalidateQueries({ queryKey: ['dashboard-stats'] });

@@ -37,7 +37,6 @@ import {
 } from '../services/feature-flags';
 import { FeatureFlag } from '../types/feature-flags';
 
-
 export function Dashboard() {
   const [searchTerm, setSearchTerm] = useState('');
   const [isModalOpen, setIsModalOpen] = useState(false);

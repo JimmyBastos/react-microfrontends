@@ -5,11 +5,13 @@ The main shell application for the Flagster microfrontend architecture. This app
 ## Quick Start
 
 Install dependencies:
+
 ```bash
 pnpm install
 ```
 
 Start development server:
+
 ```bash
 pnpm dev
 ```

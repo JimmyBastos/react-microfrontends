@@ -5,11 +5,13 @@ The dashboard microfrontend for feature flag management. This app provides CRUD 
 ## Quick Start
 
 Install dependencies:
+
 ```bash
 pnpm install
 ```
 
 Start development server:
+
 ```bash
 pnpm dev
 ```

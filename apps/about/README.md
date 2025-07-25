@@ -5,11 +5,13 @@ The about page microfrontend that showcases project information, technology stac
 ## Quick Start
 
 Install dependencies:
+
 ```bash
 pnpm install
 ```
 
 Start development server:
+
 ```bash
 pnpm dev
 ```

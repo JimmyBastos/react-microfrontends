@@ -18,7 +18,7 @@ export default withZephyr()({
     // @ts-expect-error non-blocking error
     tsConfig: path.resolve(__dirname, './tsconfig.json'),
   },
-devServer: {
+  devServer: {
     port: 8282,
     historyApiFallback: true,
     watchFiles: [path.resolve(__dirname, 'src')],
