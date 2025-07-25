@@ -1,3 +1,3 @@
-import './styles/global.css'
+import './styles/styles.css'
 export * from './components';
 export * from './lib';
